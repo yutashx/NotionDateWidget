@@ -30,7 +30,3 @@ Notionページに埋め込める、シンプルでカスタマイズ可能な�
 | `startDate` | 開始日（ISO形式: YYYY-MM-DD） | `startDate=2025-01-01` |
 | `endDate` | 終了日（ISO形式: YYYY-MM-DD） | `endDate=2025-12-31` |
 | `color` | カラーテーマ (`blue`, `red`, `green`, `purple`, `orange`) | `color=blue` |
-
-## 埋め込み例
-
-### 残り日数カウントダウン
