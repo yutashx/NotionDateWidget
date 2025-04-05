@@ -1,0 +1,45 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.widget {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    padding: 16px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+.widget-title {
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.6);
+    margin: 0 0 8px 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+.widget-value {
+    font-size: 48px;
+    font-weight: 600;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+    text-align: center;
+}
+
+/* カラーテーマ */
+.widget.blue .widget-value { color: #0366d6; }
+.widget.red .widget-value { color: #d73a49; }
+.widget.green .widget-value { color: #28a745; }
+.widget.purple .widget-value { color: #6f42c1; }
+.widget.orange .widget-value { color: #f66a0a; }
