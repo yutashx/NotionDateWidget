@@ -8,7 +8,9 @@ Notionページに埋め込める、シンプルでカスタマイズ可能な�
 - 📅 経過日数の表示
 - ⏱️ 残り日数のカウントダウン
 - 📊 進捗率の計算と表示
-- 🎨 カラーテーマのカスタマイズ
+- 🎨 カラーテーマのカスタマイズ（プリセット色またはHexコード）
+- 📝 タイトルの表示/非表示（`title`パラメータが空の場合は非表示）
+- 📱 レスポンシブなフォントサイズ
 - 🔄 自動更新（1時間ごと）
 
 ## Notionへの埋め込み方法
@@ -26,7 +28,7 @@ Notionページに埋め込める、シンプルでカスタマイズ可能な�
 | パラメータ | 説明 | 例 |
 |------------|------|-----|
 | `type` | 計算方式 (`remaining`=残日数, `passed`=経過日数, `progress`=進捗率) | `type=remaining` |
-| `title` | ウィジェットのタイトル | `title=プロジェクト期限` |
+| `title` | ウィジェットのタイトル（省略可能。空の場合は非表示） | `title=プロジェクト期限` |
 | `startDate` | 開始日（ISO形式: YYYY-MM-DD） | `startDate=2025-01-01` |
 | `endDate` | 終了日（ISO形式: YYYY-MM-DD） | `endDate=2025-12-31` |
-| `color` | カラーテーマ (`blue`, `red`, `green`, `purple`, `orange`) | `color=blue` |
+| `color` | カラーテーマ (`blue`, `red`, `green`, `purple`, `orange`) またはHexコード (`#RRGGBB` or `#RGB`) | `color=blue` or `color=#FF5733` |

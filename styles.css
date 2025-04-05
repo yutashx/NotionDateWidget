@@ -15,22 +15,24 @@ body {
     border-radius: 3px;
     padding: 16px;
     width: 100%;
-    max-width: 300px;
+    max-width: 300px; /* Removed max-width constraint */
     box-sizing: border-box;
 }
 
 .widget-title {
-    font-size: 14px;
+    /* Responsive font size: min 10px, preferred 2vw, max 16px */
+    font-size: clamp(10px, 2vw, 16px); 
     color: rgba(0, 0, 0, 0.6);
-    margin: 0 0 8px 0;
+    margin: 0 0 0.5em 0; /* Use em for responsive margin */
     padding: 0;
     font-weight: normal;
 }
 
 .widget-value {
-    font-size: 48px;
+    /* Responsive font size: min 24px, preferred 6vw, max 50px */
+    font-size: clamp(24px, 6vw, 50px); 
     font-weight: 600;
-    color: #000;
+    color: #000; /* Default color, overridden by JS if hex/class is provided */
     margin: 0;
     padding: 0;
     line-height: 1.2;
